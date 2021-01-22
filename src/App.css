@@ -13,6 +13,31 @@
 	color: black;
 }
 
+.todo-list li input[type='checkbox'] {
+	-ms-transform: scale(2); /* IE */
+	-moz-transform: scale(2); /* FF */
+	-webkit-transform: scale(2); /* Safari and Chrome */
+	-o-transform: scale(2); /* Opera */
+	transform: scale(2);
+	padding: 10px;
+	float: right;
+}
+
+.todo-list li.completed {
+	background: rgb(119, 218, 243);
+}
+
+.todo-list li button {
+	float: right;
+	margin-right: 20px;
+}
+
+.todo-list li button:hover {
+	cursor: pointer;
+	background: red;
+	color: white;
+}
+
 /* Navbar */
 .navbar {
 	padding: 5px;
@@ -27,4 +52,24 @@
 	align-items: center;
 	list-style: none;
 	padding: 0;
+}
+
+/* TodoForm */
+form {
+	padding: 10px;
+}
+
+input[type='text'] {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	margin: 6px 0;
+	border: 0;
+}
+
+input[type='submit'] {
+	margin: 10px auto;
+	padding: 10px;
+	border: 0;
+	display: block;
 }
