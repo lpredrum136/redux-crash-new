@@ -4,7 +4,7 @@ import {
 	todosSelector,
 	markComplete,
 	deleteTodo,
-	getAllTodos
+	getTodos
 } from '../store/reducers/todosSlice'
 import TodoForm from './TodoForm'
 
@@ -24,7 +24,7 @@ const Todos = () => {
 
 	useEffect(() => {
 		// send request to jsonplaceholder
-		dispatch(getAllTodos(null))
+		dispatch(getTodos())
 	}, [dispatch])
 
 	return (
